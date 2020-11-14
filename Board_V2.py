@@ -21,10 +21,7 @@ log = Text(root,height = 14,width=30,yscrollcommand = scroll.set)
 
 log.grid(row=4,rowspan=2,column=11,columnspan=2,sticky=W+E)
 
-log.configure(state='disabled')
-
-
-        
+log.configure(state='disabled')    
 
 def end():
     root.destroy()
@@ -84,6 +81,7 @@ clearlog = Button(root,height=1,width=10,command=lambda: clear(),text="Clear Log
 clearlog.grid(row=6,column=11,sticky=NW)
 
 
+
 red = []
 black = []
 for i in range(8): 
@@ -92,8 +90,6 @@ for i in range(8):
         col.append(0)       
     red.append(col)
     black.append(col)
-
-
 
 swap = 0
 for i in range(0,8):
@@ -111,10 +107,6 @@ for i in range(0,8):
         swap = 0
     else: 
         swap = 1   
-
-
-
-
 
 swap = 1
 for i in range(0,8):
